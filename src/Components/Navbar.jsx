@@ -35,7 +35,9 @@ const Navbar = () => {
           alt="Avinash Logo"
           className="w-2/5 h-auto cursor-pointer"
         /> */}
-        <h1 className="text-5xl font-signature ml-2">Avinash</h1>
+        <h1 className="text-3xl font-signature sm:ml-2 sm:text-5xl ">
+          Avinash
+        </h1>
       </div>
 
       <ul className="hidden md:flex">
