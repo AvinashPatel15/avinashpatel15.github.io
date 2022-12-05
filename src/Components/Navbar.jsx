@@ -28,8 +28,13 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full px-4 h-20 text-white bg-black fixed">
+    <div className="flex justify-between items-center w-full px-4 h-20 text-black bg-gray-500 fixed">
       <div>
+        {/* <img
+          src="https://logos.textgiraffe.com/logos/logo-name/Avinash-designstyle-boots-m.png"
+          alt="Avinash Logo"
+          className="w-2/5 h-auto cursor-pointer"
+        /> */}
         <h1 className="text-5xl font-signature ml-2">Avinash</h1>
       </div>
 
@@ -37,22 +42,25 @@ const Navbar = () => {
         {Links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
+            className="px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200"
           >
             {link}
           </li>
         ))}
+        <li className="px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200">
+          <a href="/Avinash-Patel-Resume.pdf">Resume</a>
+        </li>
       </ul>
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        className="cursor-pointer pr-4 z-10 text-black md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gray-500 text-black">
           {Links.map(({ id, link }) => (
             <li
               key={id}
@@ -61,6 +69,9 @@ const Navbar = () => {
               {link}
             </li>
           ))}
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+            <a href="/Avinash-Patel-Resume.pdf">Resume</a>
+          </li>
         </ul>
       )}
     </div>
