@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.e12c4a70.css",
-    "main.js": "/static/js/main.500beaf7.js",
+    "main.css": "/static/css/main.44817f8b.css",
+    "main.js": "/static/js/main.0ab75d6b.js",
     "static/media/Avinash.jpg": "/static/media/Avinash.fed50b874286a5d80677.jpg",
     "index.html": "/index.html",
-    "main.e12c4a70.css.map": "/static/css/main.e12c4a70.css.map",
-    "main.500beaf7.js.map": "/static/js/main.500beaf7.js.map"
+    "main.44817f8b.css.map": "/static/css/main.44817f8b.css.map",
+    "main.0ab75d6b.js.map": "/static/js/main.0ab75d6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e12c4a70.css",
-    "static/js/main.500beaf7.js"
+    "static/css/main.44817f8b.css",
+    "static/js/main.0ab75d6b.js"
   ]
 }
