@@ -28,7 +28,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full px-4 h-20 text-black bg-gray-500 fixed">
+    <div className="flex justify-between items-center w-full px-4 h-20 text-black bg-slate-400 fixed">
       <div>
         {/* <img
           src="https://logos.textgiraffe.com/logos/logo-name/Avinash-designstyle-boots-m.png"
@@ -60,7 +60,7 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gray-500 text-black">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-slate-400 text-black">
           {Links.map(({ id, link }) => (
             <li
               key={id}
