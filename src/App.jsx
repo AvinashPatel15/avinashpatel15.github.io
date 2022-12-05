@@ -1,5 +1,7 @@
+import About from "./Components/About";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
+import Projects from "./Components/Projects";
 import SocialLinks from "./Components/SocialLinks";
 
 function App() {
@@ -7,6 +9,8 @@ function App() {
     <div>
       <Navbar />
       <Home />
+      <About />
+      {/* <Projects /> */}
       <SocialLinks />
     </div>
   );
