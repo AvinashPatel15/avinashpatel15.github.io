@@ -18,6 +18,7 @@ import react from "../Assets/react.png";
 import redux from "../Assets/redux.png";
 import tailwind from "../Assets/tailwind.png";
 import Vercel from "../Assets/Vercel.png";
+import GitHubCalendar from "react-github-calendar";
 
 const Skills = () => {
   const proskill = [
@@ -53,42 +54,48 @@ const Skills = () => {
     },
     {
       id: 6,
+      src: nextjs,
+      title: "Next.JS",
+      style: "shadow-black border-black",
+    },
+    {
+      id: 7,
       src: chakra,
       title: "Chakra-UI",
       style: "shadow-black border-black",
     },
     {
-      id: 7,
+      id: 8,
       src: materialui,
       title: "Material-UI",
       style: "shadow-blue-500 border-blue-500",
     },
     {
-      id: 8,
+      id: 9,
       src: bootstrap,
       title: "Bootstrap",
       style: "shadow-violet-600 border-violet-600",
     },
     {
-      id: 9,
+      id: 10,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-cyan-500 border-cyan-500",
     },
     {
-      id: 10,
+      id: 11,
       src: nodejs,
       title: "Node JS",
       style: "shadow-green-600 border-green-600",
     },
     {
-      id: 11,
+      id: 12,
       src: mongodb,
       title: "MongoDB",
       style: "shadow-yellow-800 border-yellow-800",
     },
     {
-      id: 12,
+      id: 13,
       src: expressjs,
       title: "Express JS",
       style: "shadow-black border-black",
@@ -174,6 +181,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
+      {/* <GitHubCalendar /> */}
       <div className="mt-3 sm:mt-5 md:mt-7 mb-3 sm:mb-5 md:mb-7">
         <hr />
       </div>
