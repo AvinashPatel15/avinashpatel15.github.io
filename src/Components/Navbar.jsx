@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -28,14 +29,9 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full px-4 h-20 text-black bg-slate-400 fixed">
+    <div className="flex justify-between items-center w-full px-4 h-20 text-black bg-slate-400 fixed z-50">
       <div>
-        {/* <img
-          src="https://logos.textgiraffe.com/logos/logo-name/Avinash-designstyle-boots-m.png"
-          alt="Avinash Logo"
-          className="w-2/5 h-auto cursor-pointer"
-        /> */}
-        <h1 className="text-3xl font-signature sm:ml-2 sm:text-5xl ">
+        <h1 className="text-3xl font-signature sm:ml-2 sm:text-5xl hover:scale-105 duration-200 cursor-pointer">
           Avinash
         </h1>
       </div>
@@ -46,7 +42,9 @@ const Navbar = () => {
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200"
           >
-            {link}
+            <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
           </li>
         ))}
         <li className="px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200">
@@ -66,12 +64,19 @@ const Navbar = () => {
           {Links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+              className="px-4 cursor-pointer capitalize py-6 text-4xl hover:scale-105 duration-200"
             >
-              {link}
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={500}
+              >
+                {link}
+              </Link>
             </li>
           ))}
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl hover:scale-105 duration-200">
             <a href="/Avinash-Patel-Resume.pdf">Resume</a>
           </li>
         </ul>

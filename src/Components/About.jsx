@@ -2,11 +2,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <div name="about" className="w-full mt-4">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-content w-full h-full">
+    <div name="About" className="w-full mt-0 md:mt-7">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-content w-full">
         <div className="pb-8">
           <div className="mb-6">
-            <p className="text-4xl font-bold inline border-b-4 border-gray-900 text-violet-600">
+            <p className="text-4xl font-bold inline border-b-4 border-gray-500 text-violet-600">
               About me
             </p>
           </div>
@@ -23,7 +23,7 @@ const About = () => {
           experience.
         </p>
         <div className="mb-6 mt-11">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-900 text-violet-600">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 text-violet-600">
             Education
           </p>
         </div>
@@ -41,10 +41,10 @@ const About = () => {
                 May 2022 - Present
               </h4>
               <div>
-                <h3 className="text-bold text-2xl sm:text-3xl">
+                <h3 className="text-bold text-1xl sm:text-2xl md:text-3xl">
                   Full Stack Web-Development (Full-Time)
                 </h3>
-                <h3 className="text-bold text-2xl sm:text-3xl">
+                <h3 className="text-bold text-1xl sm:text-2xl md:text-3xl">
                   Masai School, Bangalore
                 </h3>
               </div>
@@ -63,16 +63,19 @@ const About = () => {
                 July 2021 - Present
               </h4>
               <div>
-                <h3 className="text-bold text-2xl sm:text-3xl">
+                <h3 className="text-bold text-1xl sm:text-2xl md:text-3xl">
                   Bachelor of computer application
                 </h3>
-                <h3 className="text-bold text-2xl sm:text-3xl">
+                <h3 className="text-bold text-1xl sm:text-2xl md:text-3xl">
                   Rajiv Gandhi College, Katni, Madhya Pradesh
                 </h3>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-3 sm:mt-5 md:mt-7 mb-3 sm:mb-5 md:mb-7">
+        <hr />
       </div>
     </div>
   );

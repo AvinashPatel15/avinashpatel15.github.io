@@ -3,8 +3,7 @@ import Avinash from "../Assets/Avinash.jpg";
 
 const Home = () => {
   return (
-    <div name="home" className="h-screen w-full">
-      {/* bg-gradient-to-b from-black via-black to-gray-800 */}
+    <div name="Home" className="sm:h-screen w-full pt-24">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold">
@@ -15,17 +14,9 @@ const Home = () => {
             JavaScript, React, Tailwind and Next.JS. I love to explore new
             technologies and leverage them to solve real-life problems.
           </p>
-          {/* <div>
-            <button className="text-white w-fit px-6 py-3 my-2 flex gap-x-2 items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
-              Resume
-              <span>
-                <AiOutlineDownload size={20} />
-              </span>
-            </button>
-          </div> */}
         </div>
 
-        <div>
+        <div className="mb-10 sm:mb-0">
           <img
             src={Avinash}
             alt="my-profile"
@@ -33,7 +24,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="mt-4 sm:mt-0">
+      <div className="mt-3 sm:mt-5 md:mt-7 mb-3 sm:mb-5 md:mb-7">
         <hr />
       </div>
     </div>
