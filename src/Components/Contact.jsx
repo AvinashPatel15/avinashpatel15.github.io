@@ -60,7 +60,7 @@ const Contact = () => {
             Contact
           </p>
           <div className="flex mt-4">
-            <ul className="grid grid-cols-2 auto-rows-auto md:flex md:flex-row gap-3">
+            <ul className="grid grid-cols-2 auto-rows-auto md:flex md:flex-row gap-5 md:gap-3">
               {Links.map(({ id, child, href, download }) => (
                 <li
                   key={id}
