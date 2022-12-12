@@ -64,7 +64,7 @@ const Projects = () => {
             ({ id, src, demo, code, projName, Description, TechStack }) => (
               <div
                 key={id}
-                className="shadow-md shadow-gray-600 rounded-lg bg-violet-100"
+                className="shadow-md shadow-gray-600 rounded-lg bg-violet-100 p-2"
               >
                 <img
                   src={src}
