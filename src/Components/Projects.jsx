@@ -13,6 +13,9 @@ const Projects = () => {
       demo: "https://youtube-clone-ten-ochre.vercel.app",
       code: "https://github.com/AvinashPatel15/Youtube-Clone",
       projName: "Youtube Clone",
+      Description:
+        "YouTube is a free video sharing website that makes it easy to watch online videos.",
+      TechStack: "HTML | CSS | JavaScript",
     },
     {
       id: 2,
@@ -20,6 +23,9 @@ const Projects = () => {
       demo: "https://mailchimp-clone-aries.netlify.app",
       code: "https://github.com/AvinashPatel15/Mail-Chimp-Clone",
       projName: "MailChimp Clone",
+      Description:
+        "Mailchimp is marketing platform that helps you manage and talk to your clients",
+      TechStack: "HTML | CSS | React.js | Chakra-UI",
     },
     {
       id: 3,
@@ -27,6 +33,9 @@ const Projects = () => {
       demo: "https://best-buy-clone-aries.netlify.app",
       code: "https://github.com/AvinashPatel15/Best-Buy-Clone",
       projName: "Best-Buy Clone",
+      Description:
+        "Best buy is a E-commerce electronic website where you buy electric itmes.",
+      TechStack: "HTML | CSS | JavaScript | Bootstrap",
     },
     {
       id: 4,
@@ -34,6 +43,9 @@ const Projects = () => {
       demo: "https://cronometer-avinash.netlify.app/",
       code: "https://github.com/AvinashPatel15/Cronometer-Clone",
       projName: "Cronometer Clone",
+      Description:
+        "Cronometer is the most accurate, comprehensive nutrition tracking app.",
+      TechStack: "HTML | CSS | JavaScript",
     },
   ];
 
@@ -48,33 +60,46 @@ const Projects = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {project.map(({ id, src, demo, code, projName }) => (
-            <div
-              key={id}
-              className="shadow-md shadow-gray-600 rounded-lg bg-violet-100"
-            >
-              <img
-                src={src}
-                alt="Youtube-Clone"
-                className="rounded-md duration-200 hover:scale-105"
-              />
-              <div className="flex items-center justify-center mt-4">
-                <p className="text-1xl font-bold">{projName}</p>
+          {project.map(
+            ({ id, src, demo, code, projName, Description, TechStack }) => (
+              <div
+                key={id}
+                className="shadow-md shadow-gray-600 rounded-lg bg-violet-100"
+              >
+                <img
+                  src={src}
+                  alt="Youtube-Clone"
+                  className="rounded-md duration-200 hover:scale-105"
+                />
+                <div className="flex items-center justify-center mt-4">
+                  <p className="text-1xl font-bold">{projName}</p>
+                </div>
+
+                <div className="flex items-center justify-center mt-1">
+                  <p className="text-1xl text-center">{Description}</p>
+                </div>
+
+                <div className="flex items-center justify-center mt-2 ">
+                  <p className=" text-center">
+                    <span className="font-bold"> Tech-Stack:</span> {TechStack}
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-center">
+                  <a href={demo} target="_blank">
+                    <button className="w1/2 px-4 py-1 m-4 duration-200 hover:scale-105 border-2 rounded-lg border-violet-400 hover:bg-violet-400">
+                      Demo
+                    </button>
+                  </a>
+                  <a href={code} target="_blank">
+                    <button className="w1/2 px-4 py-1 m-4 duration-200 hover:scale-105 border-2 rounded-lg border-violet-400 hover:bg-violet-400">
+                      Code
+                    </button>
+                  </a>
+                </div>
               </div>
-              <div className="flex items-center justify-center">
-                <a href={demo} target="_blank">
-                  <button className="w1/2 px-4 py-1 m-4 duration-200 hover:scale-105 border-2 rounded-lg border-violet-400 hover:bg-violet-400">
-                    Demo
-                  </button>
-                </a>
-                <a href={code} target="_blank">
-                  <button className="w1/2 px-4 py-1 m-4 duration-200 hover:scale-105 border-2 rounded-lg border-violet-400 hover:bg-violet-400">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
       <div className="mt-3 sm:mt-5 md:mt-7 mb-3 sm:mb-5 md:mb-7">

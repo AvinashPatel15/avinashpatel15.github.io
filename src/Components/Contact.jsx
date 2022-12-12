@@ -1,6 +1,57 @@
 import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { AiTwotonePhone } from "react-icons/ai";
 
 const Contact = () => {
+  const Links = [
+    {
+      id: 1,
+      child: (
+        <>
+          Email <HiOutlineMail size={30} />
+        </>
+      ),
+      href: "mailto:avinashpatel9755@gmail.com",
+    },
+    {
+      id: 2,
+      child: (
+        <>
+          9131864148 <AiTwotonePhone size={30} />
+        </>
+      ),
+    },
+    {
+      id: 3,
+      child: (
+        <>
+          Linkedin <FaLinkedin size={30} />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/avinash-patel-23a265237/",
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          GitHub <FaGithub size={30} />
+        </>
+      ),
+      href: "https://github.com/AvinashPatel15",
+    },
+    {
+      id: 5,
+      child: (
+        <>
+          Resume <BsFillPersonLinesFill size={30} />
+        </>
+      ),
+      href: "/Avinash-Patel-Resume.pdf",
+      download: true,
+    },
+  ];
   return (
     <div name="Contact" className="w-full p-4">
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto">
@@ -8,6 +59,27 @@ const Contact = () => {
           <p className="text-4xl font-bold text-violet-600 inline border-b-4 border-gray-500">
             Contact
           </p>
+          <div className="flex mt-4">
+            <ul className="grid grid-cols-2 auto-rows-auto md:flex md:flex-row gap-3">
+              {Links.map(({ id, child, href, download }) => (
+                <li
+                  key={id}
+                  className={
+                    "flex justify-between items-center w-40 h-14 px-4 bg-gray-500 rounded-md cursor-pointer"
+                  }
+                >
+                  <a
+                    href={href}
+                    className="flex justify-between items-center w-full text-white"
+                    download={download}
+                    target="_blank"
+                  >
+                    {child}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
           <p className="py-6">Submit the form below to get in touch with me.</p>
         </div>
         <div className="flex justify-center items-center">

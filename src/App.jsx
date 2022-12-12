@@ -4,7 +4,6 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
-import SocialLinks from "./Components/SocialLinks";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
-      <SocialLinks />
     </div>
   );
 }
