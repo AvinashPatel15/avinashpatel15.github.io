@@ -146,7 +146,7 @@ const Skills = () => {
         </div>
 
         <div>
-          <p className="text-4xl font-bold text-center">
+          <p className="text-4xl font-bold text-center mt-10">
             Professional <span className="text-violet-600">Skillset</span>
           </p>
         </div>
@@ -164,7 +164,7 @@ const Skills = () => {
         </div>
 
         <div>
-          <p className="text-4xl font-bold text-center">
+          <p className="text-4xl font-bold text-center mt-10">
             Tools I <span className="text-violet-600">Use</span>
           </p>
         </div>
@@ -180,8 +180,51 @@ const Skills = () => {
             </div>
           ))}
         </div>
+
+        <div>
+          <p className="text-4xl font-bold text-center mt-10">
+            GitHub <span className="text-violet-600">Calendar</span>
+          </p>
+        </div>
+
+        <div className="w-full mt-5">
+          <GitHubCalendar
+            username="AvinashPatel15"
+            blockSize={20}
+            blockMargin={5}
+            fontSize={18}
+          />
+        </div>
+
+        <div>
+          <p className="text-4xl font-bold text-center mt-10">
+            GitHub <span className="text-violet-600">Stats</span>
+          </p>
+        </div>
+
+        <div className="w-full md:grid md:grid-cols-2 md:auto-rows-auto gap-x-5 gap-y-5 mt-5">
+          <div>
+            <img
+              src="https://github-readme-streak-stats.herokuapp.com/?user=avinashpatel15&theme=radical"
+              alt="Github Streak"
+            />
+          </div>
+
+          <div>
+            <img
+              src="https://github-readme-stats.vercel.app/api?username=avinashpatel15&theme=radical&count_private=true&show_icons=true"
+              alt="github stats"
+            />
+          </div>
+
+          <div>
+            <img
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=avinashpatel15&theme=radical"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
-      {/* <GitHubCalendar /> */}
       <div className="mt-3 sm:mt-5 md:mt-7 mb-3 sm:mb-5 md:mb-7">
         <hr />
       </div>
