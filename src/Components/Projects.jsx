@@ -3,7 +3,7 @@ import React from "react";
 import mailchimpclone from "../Assets/mailchimpclone.png";
 import youtubeclone from "../Assets/youtubeclone.png";
 import bestbuyclone from "../Assets/bestbuyclone.png";
-import cronometerclone from "../Assets/cronometerclone.png";
+import awakefashion from "../Assets/awakefashion.png";
 
 const Projects = () => {
   const project = [
@@ -15,7 +15,7 @@ const Projects = () => {
       projName: "Youtube Clone",
       Description:
         "YouTube is a free video sharing website that makes it easy to watch online videos.",
-      TechStack: "HTML | CSS | JavaScript",
+      TechStack: "HTML | CSS | JavaScript | React | Material-UI",
     },
     {
       id: 2,
@@ -29,6 +29,16 @@ const Projects = () => {
     },
     {
       id: 3,
+      src: awakefashion,
+      demo: "https://awake-fashion.netlify.app/",
+      code: "https://github.com/AvinashPatel15/Awake-Fashion-ReactJS",
+      projName: "Awake Fashion",
+      Description:
+        "Awake Fashion is a retail store selling a wide variety of product categories under a single brand.",
+      TechStack: "HTML | CSS | JavaScript | React.js | Chakra-UI",
+    },
+    {
+      id: 4,
       src: bestbuyclone,
       demo: "https://best-buy-clone-aries.netlify.app",
       code: "https://github.com/AvinashPatel15/Best-Buy-Clone",
@@ -36,16 +46,6 @@ const Projects = () => {
       Description:
         "Best buy is a E-commerce electronic website where you buy electric itmes.",
       TechStack: "HTML | CSS | JavaScript | Bootstrap",
-    },
-    {
-      id: 4,
-      src: cronometerclone,
-      demo: "https://cronometer-avinash.netlify.app/",
-      code: "https://github.com/AvinashPatel15/Cronometer-Clone",
-      projName: "Cronometer Clone",
-      Description:
-        "Cronometer is the most accurate, comprehensive nutrition tracking app.",
-      TechStack: "HTML | CSS | JavaScript",
     },
   ];
 
