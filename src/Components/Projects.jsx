@@ -10,8 +10,8 @@ const Projects = () => {
     {
       id: 1,
       src: youtubeclone,
-      demo: "https://youtube-clone-ten-ochre.vercel.app",
-      code: "https://github.com/AvinashPatel15/Youtube-Clone",
+      demo: "https://youtube-clone-react-pi.vercel.app/",
+      code: "https://github.com/AvinashPatel15/Youtube-Clone-React",
       projName: "Youtube Clone",
       Description:
         "YouTube is a free video sharing website that makes it easy to watch online videos.",
