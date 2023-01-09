@@ -53,7 +53,7 @@ const Contact = () => {
     },
   ];
   return (
-    <div name="Contact" className="w-full p-4">
+    <div name="Contact" className="w-full p-4 pt-20">
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto">
         <div className="pb-8">
           <p className="text-4xl font-bold text-violet-600 inline border-b-4 border-gray-500">
