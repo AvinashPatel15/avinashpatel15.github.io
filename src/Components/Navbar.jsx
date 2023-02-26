@@ -50,9 +50,7 @@ const Navbar = () => {
           </li>
         ))}
         <li className="px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200">
-          <a href="/Avinash-Patel-Resume.pdf">
-            Resume
-          </a>
+          <a href="/Avinash-Patel-Resume.pdf">Resume</a>
         </li>
       </ul>
 
