@@ -15,7 +15,13 @@ const Projects = () => {
       projName: "Youtube Clone",
       Description:
         "YouTube is a free video sharing website that makes it easy to watch online videos.",
-      TechStack: "HTML | CSS | JavaScript | React | Material-UI",
+      TechStack: [
+        { stack: "HTML" },
+        { stack: "CSS" },
+        { stack: "JavaScript" },
+        { stack: "React.JS" },
+        { stack: "Material-UI" },
+      ],
     },
     {
       id: 2,
@@ -25,7 +31,13 @@ const Projects = () => {
       projName: "MailChimp Clone",
       Description:
         "Mailchimp is marketing platform that helps you manage and talk to your clients",
-      TechStack: "HTML | CSS | React.js | Chakra-UI",
+      TechStack: [
+        { stack: "HTML" },
+        { stack: "CSS" },
+        { stack: "JavaScript" },
+        { stack: "React.JS" },
+        { stack: "Chakra-UI" },
+      ],
     },
     {
       id: 3,
@@ -35,7 +47,13 @@ const Projects = () => {
       projName: "Awake Fashion",
       Description:
         "Awake Fashion is a retail store selling a wide variety of product categories under a single brand.",
-      TechStack: "HTML | CSS | JavaScript | React.js | Chakra-UI",
+      TechStack: [
+        { stack: "HTML" },
+        { stack: "CSS" },
+        { stack: "JavaScript" },
+        { stack: "React.JS" },
+        { stack: "Chakra-UI" },
+      ],
     },
     {
       id: 4,
@@ -44,8 +62,13 @@ const Projects = () => {
       code: "https://github.com/AvinashPatel15/Best-Buy-Clone",
       projName: "Best-Buy Clone",
       Description:
-        "Best buy is a E-commerce electronic website where you buy electric itmes.",
-      TechStack: "HTML | CSS | JavaScript | Bootstrap",
+        "Best buy is a E-commerce electronic website where you buy electric items.",
+      TechStack: [
+        { stack: "HTML" },
+        { stack: "CSS" },
+        { stack: "JavaScript" },
+        { stack: "BootStrap" },
+      ],
     },
   ];
 
@@ -80,18 +103,26 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-center justify-center mt-2 ">
-                  <p className=" text-center">
-                    <span className="font-bold"> Tech-Stack:</span> {TechStack}
+                  <p className=" text-center grid grid-cols-2 justify-center gap-2">
+                    <span className="font-bold"> Tech-Stack:</span>
+                    {TechStack.map((el) => (
+                      <span class="text-black-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:text-black-400 border-2 border-purple-700 cursor-pointer">
+                        {el.stack}
+                      </span>
+                    ))}
+                    {/* <span class="text-black-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:text-black-400 border-2 border-purple-700">
+                      Purple
+                    </span> */}
                   </p>
                 </div>
 
-                <div className="flex items-center justify-center">
-                  <a href={demo} target="_blank">
+                <div className="flex items-center justify-center border-t-2 border-black mt-3">
+                  <a href={demo} target="_blank" rel="noreferrer">
                     <button className="w1/2 px-4 py-1 m-4 duration-200 hover:scale-105 border-2 rounded-lg border-violet-400 hover:bg-violet-400">
                       Demo
                     </button>
                   </a>
-                  <a href={code} target="_blank">
+                  <a href={code} target="_blank" rel="noreferrer">
                     <button className="w1/2 px-4 py-1 m-4 duration-200 hover:scale-105 border-2 rounded-lg border-violet-400 hover:bg-violet-400">
                       Code
                     </button>
