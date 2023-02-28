@@ -10,7 +10,7 @@ const Contact = () => {
       id: 1,
       child: (
         <>
-          Email <HiOutlineMail size={30} />
+          avinashpatel9755@gmail.com <HiOutlineMail size={30} />
         </>
       ),
       href: "mailto:avinashpatel9755@gmail.com",
@@ -65,7 +65,7 @@ const Contact = () => {
                 <li
                   key={id}
                   className={
-                    "flex justify-between items-center w-40 h-14 px-4 bg-gray-500 rounded-md cursor-pointer"
+                    "flex justify-between items-center h-14 px-4 bg-gray-500 rounded-md cursor-pointer"
                   }
                 >
                   <a
