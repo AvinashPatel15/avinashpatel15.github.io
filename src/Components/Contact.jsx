@@ -5,53 +5,6 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiTwotonePhone } from "react-icons/ai";
 
 const Contact = () => {
-  const Links = [
-    {
-      id: 1,
-      child: (
-        <>
-          avinashpatel9755@gmail.com <HiOutlineMail size={30} />
-        </>
-      ),
-      href: "mailto:avinashpatel9755@gmail.com",
-    },
-    {
-      id: 2,
-      child: (
-        <>
-          9131864148 <AiTwotonePhone size={30} />
-        </>
-      ),
-    },
-    {
-      id: 3,
-      child: (
-        <>
-          Linkedin <FaLinkedin size={30} />
-        </>
-      ),
-      href: "https://www.linkedin.com/in/avinash-patel-23a265237/",
-    },
-    {
-      id: 4,
-      child: (
-        <>
-          GitHub <FaGithub size={30} />
-        </>
-      ),
-      href: "https://github.com/AvinashPatel15",
-    },
-    {
-      id: 5,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      href: "/Avinash-Patel-Resume.pdf",
-      download: true,
-    },
-  ];
   return (
     <div name="Contact" className="w-full p-4 pt-20">
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto">
@@ -61,23 +14,80 @@ const Contact = () => {
           </p>
           <div className="flex mt-4">
             <ul className="grid grid-cols-2 auto-rows-auto md:flex md:flex-row gap-5 md:gap-3">
-              {Links.map(({ id, child, href, download }) => (
-                <li
-                  key={id}
-                  className={
-                    "flex justify-between items-center h-14 px-4 bg-gray-500 rounded-md cursor-pointer"
-                  }
+              <li
+                className={
+                  "flex justify-between items-center h-14 px-4 bg-gray-500 rounded-md cursor-pointer"
+                }
+              >
+                <a
+                  href="mailto:avinashpatel9755@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex justify-between items-center w-full text-white"
                 >
-                  <a
-                    href={href}
-                    className="flex justify-between items-center w-full text-white"
-                    download={download}
-                    target="_blank"
-                  >
-                    {child}
-                  </a>
-                </li>
-              ))}
+                  avinashpatel9755@gmail.com <HiOutlineMail size={30} />
+                </a>
+              </li>
+
+              <li
+                className={
+                  "flex justify-between items-center h-14 px-4 bg-gray-500 rounded-md cursor-pointer"
+                }
+              >
+                <a className="flex justify-between items-center w-full text-white">
+                  9131864148 <AiTwotonePhone size={30} />
+                </a>
+              </li>
+
+              <li
+                className={
+                  "flex justify-between items-center h-14 px-4 bg-gray-500 rounded-md cursor-pointer"
+                }
+              >
+                <a
+                  href="https://www.linkedin.com/in/avinash-patel-23a265237/"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="flex justify-between items-center w-full text-white"
+                >
+                  Linkedin <FaLinkedin size={30} />
+                </a>
+              </li>
+
+              <li
+                className={
+                  "flex justify-between items-center h-14 px-4 bg-gray-500 rounded-md cursor-pointer"
+                }
+              >
+                <a
+                  href="https://github.com/AvinashPatel15"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex justify-between items-center w-full text-white"
+                >
+                  GitHub <FaGithub size={30} />
+                </a>
+              </li>
+
+              <li
+                className={
+                  "flex justify-between items-center h-14 px-4 bg-gray-500 rounded-md cursor-pointer"
+                }
+              >
+                <a
+                  onClick={() =>
+                    window.open(
+                      `https://drive.google.com/file/d/1hapX1uRFtZ90J-0qiOoAcML9MlzsXRPM/view?usp=sharing`
+                    )
+                  }
+                  href="/fw20_0025_Avinash-Patel-Resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex justify-between items-center w-full text-white"
+                >
+                  Resume <BsFillPersonLinesFill size={30} />
+                </a>
+              </li>
             </ul>
           </div>
           <p className="py-6">Submit the form below to get in touch with me.</p>
@@ -92,19 +102,19 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Enter Your Name Please"
-              className="p-2 bg-transparent border-2 rounded-md focus:outline-none border-2 border-violet-400"
+              className="p-2 bg-transparent rounded-md focus:outline-none border-2 border-violet-400"
             />
             <input
               type="text"
               name="email"
               placeholder="Enter Your E-mail Please"
-              className="p-2 bg-transparent border-2 rounded-md focus:outline-none my-4 border-2 border-violet-400"
+              className="p-2 bg-transparent rounded-md focus:outline-none my-4 border-2 border-violet-400"
             />
             <textarea
               name="massage"
               placeholder="Enter Your Massage"
               rows="10"
-              className="p-2 bg-transparent border-2 rounded-md focus:outline-none border-2 border-violet-400"
+              className="p-2 bg-transparent rounded-md focus:outline-none border-2 border-violet-400"
             ></textarea>
             <button className="bg-gradient-to-b from-cyan-500 to-violet-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Let's talk

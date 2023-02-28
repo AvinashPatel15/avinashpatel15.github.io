@@ -50,7 +50,16 @@ const Navbar = () => {
           </li>
         ))}
         <li className="px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200">
-          <a href="/Avinash-Patel-Resume.pdf">Resume</a>
+          <a
+            onClick={() =>
+              window.open(
+                `https://drive.google.com/file/d/1hapX1uRFtZ90J-0qiOoAcML9MlzsXRPM/view?usp=sharing`
+              )
+            }
+            href="/fw20_0025_Avinash-Patel-Resume.pdf"
+          >
+            Resume
+          </a>
         </li>
       </ul>
 
@@ -79,7 +88,17 @@ const Navbar = () => {
             </li>
           ))}
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl hover:scale-105 duration-200">
-            <a href="/Avinash-Patel-Resume.pdf">Resume</a>
+            <a
+              onClick={() =>
+                window.open(
+                  `https://drive.google.com/file/d/1hapX1uRFtZ90J-0qiOoAcML9MlzsXRPM/view?usp=sharing`
+                )
+              }
+              href="/fw20_0025_Avinash-Patel-Resume.pdf"
+              className="p-4 text-lg"
+            >
+              Resume
+            </a>
           </li>
         </ul>
       )}

@@ -13,6 +13,24 @@ const About = () => {
           <p className="text-3xl sm:text-4xl font-bold inline border-b-4 border-gray-500">
             Hi, I'm <span className="text-violet-600">Avinash Patel</span>
           </p>
+          <div className="flex mt-4">
+            <button
+              type="button"
+              class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            >
+              <a
+                onClick={() =>
+                  window.open(
+                    `https://drive.google.com/file/d/1hapX1uRFtZ90J-0qiOoAcML9MlzsXRPM/view?usp=sharing`
+                  )
+                }
+                href="/fw20_0025_Avinash-Patel-Resume.pdf"
+                className="p-4 text-lg"
+              >
+                Resume
+              </a>
+            </button>
+          </div>
         </div>
         <p>
           Dedicated and efficient aspiring full stack web developer. Worked
