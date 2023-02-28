@@ -1,9 +1,13 @@
 import React from "react";
-
 import mailchimpclone from "../Assets/mailchimpclone.png";
 import youtubeclone from "../Assets/youtubeclone.png";
 import bestbuyclone from "../Assets/bestbuyclone.png";
 import awakefashion from "../Assets/awakefashion.png";
+import { IoLogoJavascript } from "react-icons/io";
+import { FaCss3Alt, FaReact } from "react-icons/fa";
+import { RiHtml5Line } from "react-icons/ri";
+import { SiChakraui, SiMaterialui } from "react-icons/si";
+import { BsBootstrapFill } from "react-icons/bs";
 
 const Projects = () => {
   const project = [
@@ -16,11 +20,11 @@ const Projects = () => {
       Description:
         "YouTube is a free video sharing website that makes it easy to watch online videos.",
       TechStack: [
-        { stack: "HTML" },
-        { stack: "CSS" },
-        { stack: "JavaScript" },
-        { stack: "React.JS" },
-        { stack: "Material-UI" },
+        { stack: <RiHtml5Line size={30} /> },
+        { stack: <FaCss3Alt size={30} /> },
+        { stack: <IoLogoJavascript size={30} /> },
+        { stack: <FaReact size={30} /> },
+        { stack: <SiMaterialui size={30} /> },
       ],
     },
     {
@@ -32,11 +36,11 @@ const Projects = () => {
       Description:
         "Mailchimp is marketing platform that helps you manage and talk to your clients",
       TechStack: [
-        { stack: "HTML" },
-        { stack: "CSS" },
-        { stack: "JavaScript" },
-        { stack: "React.JS" },
-        { stack: "Chakra-UI" },
+        { stack: <RiHtml5Line size={30} /> },
+        { stack: <FaCss3Alt size={30} /> },
+        { stack: <IoLogoJavascript size={30} /> },
+        { stack: <FaReact size={30} /> },
+        { stack: <SiChakraui size={30} /> },
       ],
     },
     {
@@ -48,11 +52,11 @@ const Projects = () => {
       Description:
         "Awake Fashion is a retail store selling a wide variety of product categories under a single brand.",
       TechStack: [
-        { stack: "HTML" },
-        { stack: "CSS" },
-        { stack: "JavaScript" },
-        { stack: "React.JS" },
-        { stack: "Chakra-UI" },
+        { stack: <RiHtml5Line size={30} /> },
+        { stack: <FaCss3Alt size={30} /> },
+        { stack: <IoLogoJavascript size={30} /> },
+        { stack: <FaReact size={30} /> },
+        { stack: <SiChakraui size={30} /> },
       ],
     },
     {
@@ -64,10 +68,10 @@ const Projects = () => {
       Description:
         "Best buy is a E-commerce electronic website where you buy electric items.",
       TechStack: [
-        { stack: "HTML" },
-        { stack: "CSS" },
-        { stack: "JavaScript" },
-        { stack: "BootStrap" },
+        { stack: <RiHtml5Line size={30} /> },
+        { stack: <FaCss3Alt size={30} /> },
+        { stack: <IoLogoJavascript size={30} /> },
+        { stack: <BsBootstrapFill size={30} /> },
       ],
     },
   ];
@@ -102,11 +106,11 @@ const Projects = () => {
                   <p className="text-1xl text-center">{Description}</p>
                 </div>
 
-                <div className="flex items-center justify-center mt-2 ">
-                  <p className=" text-center grid grid-cols-2 justify-center gap-2">
-                    <span className="font-bold"> Tech-Stack:</span>
+                <div className="mt-2 ">
+                  <div className="font-bold"> Tech-Stack:</div>
+                  <p className="grid grid-cols-5 gap-2 justify-center items-center mt-2">
                     {TechStack.map((el) => (
-                      <span class="text-black-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:text-black-400 border-2 border-purple-700 cursor-pointer">
+                      <span class="cursor-pointer">
                         {el.stack}
                       </span>
                     ))}
