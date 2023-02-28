@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.81847c66.css",
-    "main.js": "/static/js/main.2ea5c4c8.js",
+    "main.css": "/static/css/main.7eca4b1d.css",
+    "main.js": "/static/js/main.5b71213a.js",
     "static/media/youtubeclone.png": "/static/media/youtubeclone.d9775ff3cc5fcdec506b.png",
     "static/media/awakefashion.png": "/static/media/awakefashion.70ce20b76b37ad3bb0a8.png",
     "static/media/bestbuyclone.png": "/static/media/bestbuyclone.2ef54cf7e1314cd63094.png",
@@ -22,11 +22,11 @@
     "static/media/materialui.png": "/static/media/materialui.bf1399d376297fcc515d.png",
     "static/media/html.png": "/static/media/html.1525117dcf63347d2f6d.png",
     "index.html": "/index.html",
-    "main.81847c66.css.map": "/static/css/main.81847c66.css.map",
-    "main.2ea5c4c8.js.map": "/static/js/main.2ea5c4c8.js.map"
+    "main.7eca4b1d.css.map": "/static/css/main.7eca4b1d.css.map",
+    "main.5b71213a.js.map": "/static/js/main.5b71213a.js.map"
   },
   "entrypoints": [
-    "static/css/main.81847c66.css",
-    "static/js/main.2ea5c4c8.js"
+    "static/css/main.7eca4b1d.css",
+    "static/js/main.5b71213a.js"
   ]
 }
