@@ -87,7 +87,7 @@ const Projects = () => {
       code: "https://github.com/AvinashPatel15/Best-Buy-Clone",
       projName: "Best-Buy Clone",
       Description:
-        "Best buy is a E-commerce electronic website where you buy electric items.",
+        "Best buy is a E-commerce electronic website where you buy all electrics items.",
       TechStack: [
         { stack: <RiHtml5Line size={30} /> },
         { stack: <FaCss3Alt size={30} /> },
