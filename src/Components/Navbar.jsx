@@ -95,7 +95,6 @@ const Navbar = () => {
                 )
               }
               href="/fw20_0025_Avinash-Patel-Resume.pdf"
-              className="p-4 text-lg"
             >
               Resume
             </a>
