@@ -103,20 +103,23 @@ const Contact = () => {
               name="name"
               placeholder="Enter Your Name Please"
               className="p-2 bg-transparent rounded-md focus:outline-none border-2 border-violet-400"
+              required
             />
             <input
               type="text"
               name="email"
               placeholder="Enter Your E-mail Please"
               className="p-2 bg-transparent rounded-md focus:outline-none my-4 border-2 border-violet-400"
+              required
             />
             <textarea
               name="massage"
               placeholder="Enter Your Massage"
               rows="10"
               className="p-2 bg-transparent rounded-md focus:outline-none border-2 border-violet-400"
+              required
             ></textarea>
-            <button className="bg-gradient-to-b from-cyan-500 to-violet-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button type="submit" className="bg-gradient-to-b from-cyan-500 to-violet-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Let's talk
             </button>
           </form>
