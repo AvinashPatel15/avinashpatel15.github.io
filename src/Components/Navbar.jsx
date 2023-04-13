@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full px-4 h-20 text-black bg-slate-400 fixed z-50">
+    <div className="flex justify-between items-center w-full px-4 h-20 text-black bg-slate-400 sticky top-0 left-0 z-50">
       <div>
         <Link to={"Home"} smooth duration={600}>
           <h1 className="text-3xl font-signature sm:ml-2 sm:text-5xl hover:scale-105 duration-200 cursor-pointer">
