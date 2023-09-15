@@ -12,6 +12,7 @@ import materialui from "../Assets/materialui.png";
 import mongodb from "../Assets/mongodb.png";
 import Netlify from "../Assets/Netlify.png";
 import nextjs from "../Assets/nextjs.png";
+import nuxtjs from "../Assets/nuxtjs.png";
 import nodejs from "../Assets/nodejs.png";
 import postman from "../Assets/postman.png";
 import react from "../Assets/react.png";
@@ -60,42 +61,48 @@ const Skills = () => {
     },
     {
       id: 7,
+      src: nuxtjs,
+      title: "Nuxt.JS",
+      style: "shadow-green-500 border-green-500",
+    },
+    {
+      id: 8,
       src: chakra,
       title: "Chakra-UI",
       style: "shadow-black border-black",
     },
     {
-      id: 8,
+      id: 9,
       src: materialui,
       title: "Material-UI",
       style: "shadow-blue-500 border-blue-500",
     },
     {
-      id: 9,
+      id: 10,
       src: bootstrap,
       title: "Bootstrap",
       style: "shadow-violet-600 border-violet-600",
     },
     {
-      id: 10,
+      id: 11,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-cyan-500 border-cyan-500",
     },
     {
-      id: 11,
+      id: 12,
       src: nodejs,
       title: "Node JS",
       style: "shadow-green-600 border-green-600",
     },
     {
-      id: 12,
+      id: 13,
       src: mongodb,
       title: "MongoDB",
       style: "shadow-yellow-800 border-yellow-800",
     },
     {
-      id: 13,
+      id: 14,
       src: expressjs,
       title: "Express JS",
       style: "shadow-black border-black",
