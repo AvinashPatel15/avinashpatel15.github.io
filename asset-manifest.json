@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.254d9353.css",
-    "main.js": "/static/js/main.e85daf31.js",
+    "main.css": "/static/css/main.1541cd78.css",
+    "main.js": "/static/js/main.0bc9bc43.js",
     "static/media/youtubeclone.png": "/static/media/youtubeclone.d9775ff3cc5fcdec506b.png",
     "static/media/awakefashion.png": "/static/media/awakefashion.70ce20b76b37ad3bb0a8.png",
     "static/media/bestbuyclone.png": "/static/media/bestbuyclone.2ef54cf7e1314cd63094.png",
@@ -14,6 +14,7 @@
     "static/media/mongodb.png": "/static/media/mongodb.967712d43604435a706f.png",
     "static/media/css.png": "/static/media/css.bad01593e79fe62ac928.png",
     "static/media/nodejs.png": "/static/media/nodejs.c2addc8c9233f4082bc6.png",
+    "static/media/nuxtjs.png": "/static/media/nuxtjs.d84328213264d3ca1a07.png",
     "static/media/nextjs.png": "/static/media/nextjs.1fbd0895d941d40e8c19.png",
     "static/media/vscode.png": "/static/media/vscode.9c882ad5badc1ff1af21.png",
     "static/media/tailwind.png": "/static/media/tailwind.74845b2365490099c9d2.png",
@@ -23,11 +24,11 @@
     "static/media/materialui.png": "/static/media/materialui.bf1399d376297fcc515d.png",
     "static/media/html.png": "/static/media/html.1525117dcf63347d2f6d.png",
     "index.html": "/index.html",
-    "main.254d9353.css.map": "/static/css/main.254d9353.css.map",
-    "main.e85daf31.js.map": "/static/js/main.e85daf31.js.map"
+    "main.1541cd78.css.map": "/static/css/main.1541cd78.css.map",
+    "main.0bc9bc43.js.map": "/static/js/main.0bc9bc43.js.map"
   },
   "entrypoints": [
-    "static/css/main.254d9353.css",
-    "static/js/main.e85daf31.js"
+    "static/css/main.1541cd78.css",
+    "static/js/main.0bc9bc43.js"
   ]
 }
